@@ -1,0 +1,21 @@
+{
+  "action.tame_tools.transfer.from": "%s is now the owner of %s",
+  "action.tame_tools.transfer.to": "%s has transferred %s to you",
+  "item.tame_tools.common_tame_staff": "Common Tame Staff",
+  "item.tame_tools.creative_tame_staff": "Creative Tame Staff",
+  "item.tame_tools.epic_tame_staff": "Epic Tame Staff",
+  "item.tame_tools.legendary_tame_staff": "Legendary Tame Staff",
+  "item.tame_tools.tame_staff.tooltip": "You can use this to tame mobs with %s health or lower",
+  "item.tame_tools.release_stone": "Release Stone",
+  "item.tame_tools.release_stone.tooltip": "Use on your pet to release it",
+  "item.tame_tools.store_stone": "Store Stone",
+  "item.tame_tools.store_stone.tooltip1": "Use on your pet to store it in this item",
+  "item.tame_tools.store_stone.tooltip2": "Use on block to release it from this item",
+  "item.tame_tools.store_stone.stored": "Stored entity: ",
+  "item.tame_tools.tools.blacklist": "This entity cannot be tamed!",
+  "item.tame_tools.tools.disabled": "This item is disabled in game rule",
+  "item.tame_tools.transfer_stone": "Transfer Stone",
+  "item.tame_tools.transfer_stone.tooltip1": "Use on your pet to bind",
+  "item.tame_tools.transfer_stone.tooltip2": "Use on another player to transfer",
+  "itemGroup.tame_tools.main": "Tame Tools"
+}
