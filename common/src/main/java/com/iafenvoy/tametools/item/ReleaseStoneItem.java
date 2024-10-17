@@ -23,14 +23,14 @@ public class ReleaseStoneItem extends TTItem {
 
     @Override
     public ActionResult useOnEntity(ItemStack itemStack, PlayerEntity user, LivingEntity entity, Hand hand) {
-        ItemStack stack=user.getStackInHand(hand);
+        ItemStack stack = user.getStackInHand(hand);
         if (!user.getEntityWorld().getGameRules().getBoolean(TTGameRules.ENABLE_RELEASE_STONE)) {
             user.sendMessage(Text.translatable("item.tame_tools.tools.disabled"));
             return ActionResult.PASS;
         }
         if (entity instanceof MobEntity mob && stack.isOf(this)) {
             if (user.getEntityWorld().isClient) return ActionResult.SUCCESS;
-            if (!TameUtil.isOwner(mob, user)) return ActionResult.FAIL;
+            if (!TameUtil.isOwner(mob, user) && !user.isCreative()) return ActionResult.FAIL;
             TameUtil.setOwner(mob, null);
             return ActionResult.SUCCESS;
         }
@@ -40,6 +40,7 @@ public class ReleaseStoneItem extends TTItem {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-        tooltip.add(Text.translatable("item.tame_tools.release_stone.tooltip"));
+        tooltip.add(Text.translatable("item.tame_tools.release_stone.tooltip1"));
+        tooltip.add(Text.translatable("item.tame_tools.release_stone.tooltip2"));
     }
 }

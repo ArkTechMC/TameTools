@@ -1,0 +1,22 @@
+{
+  "action.tame_tools.transfer.from": "%s现在是%s的主人了",
+  "action.tame_tools.transfer.to": "%s将宠物%s转交给你",
+  "item.tame_tools.common_tame_staff": "驯兽杖",
+  "item.tame_tools.creative_tame_staff": "创造模式驯兽杖",
+  "item.tame_tools.epic_tame_staff": "史诗驯兽杖",
+  "item.tame_tools.legendary_tame_staff": "传奇驯兽杖",
+  "item.tame_tools.tame_staff.tooltip": "你可以用这个物品驯服%s血以下的生物",
+  "item.tame_tools.release_stone": "放生石",
+  "item.tame_tools.release_stone.tooltip1": "对你的宠物使用来放生",
+  "item.tame_tools.release_stone.tooltip2": "创造模式可以放生任何宠物",
+  "item.tame_tools.store_stone": "存储石",
+  "item.tame_tools.store_stone.tooltip1": "对你的宠物使用可以将他收入此物品",
+  "item.tame_tools.store_stone.tooltip2": "在方块上使用可以将宠物重新召唤出来",
+  "item.tame_tools.store_stone.stored": "当前存储宠物：",
+  "item.tame_tools.tools.blacklist": "这个生物不能被驯服！",
+  "item.tame_tools.tools.disabled": "此物品在游戏规则内被禁用",
+  "item.tame_tools.transfer_stone": "转让石",
+  "item.tame_tools.transfer_stone.tooltip1": "对你的宠物使用以绑定",
+  "item.tame_tools.transfer_stone.tooltip2": "对另一个玩家使用即可转交被绑定的宠物",
+  "itemGroup.tame_tools.main": "驯兽工具"
+}
