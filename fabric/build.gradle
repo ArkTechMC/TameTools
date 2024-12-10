@@ -36,7 +36,7 @@ dependencies {
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 
-    modImplementation "maven.modrinth:tameable:rpB1qYep"
+    modImplementation "maven.modrinth:tameable:mN2E5eZv"
 }
 
 processResources {

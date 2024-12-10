@@ -32,6 +32,7 @@ You can store a pet into this item.
 **All configurations are `/gamerule`!**
 
 - `tame:enable_tame_staff` (Default **`TRUE`**): Enable tame staffs ability.
+- `tame:tame_tameable` (Default **`FALSE`**): Enable tame entities which is a vanilla `Tameable`.
 - `tame:tame_use_exp` (Default **`TRUE`**): Tame through staffs will spend experience level
 - `tame:enable_release_stone` (Default **`TRUE`**): Enable release stone ability.
 - `tame:enable_store_stone` (Default **`TRUE`**): Enable store stone ability.

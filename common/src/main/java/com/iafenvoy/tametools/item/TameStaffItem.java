@@ -1,11 +1,11 @@
 package com.iafenvoy.tametools.item;
 
-import com.iafenvoy.tameable.data.EntityTameData;
 import com.iafenvoy.tametools.registry.TTGameRules;
 import com.iafenvoy.tametools.registry.TTTags;
 import com.iafenvoy.tametools.util.TameUtil;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Tameable;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -37,13 +37,17 @@ public class TameStaffItem extends TTItem {
             return ActionResult.PASS;
         }
         boolean useExp = user.getEntityWorld().getGameRules().getBoolean(TTGameRules.TAME_USE_EXP);
+        boolean tameTameable = user.getEntityWorld().getGameRules().getBoolean(TTGameRules.TAME_TAMEABLE);
         if (entity instanceof MobEntity mob && !TameUtil.hasOwner(mob) && entity.getHealth() <= this.health && (!useExp || user.isCreative() || user.experienceLevel >= entity.getHealth())) {
-            EntityTameData.get(mob).setOwner(user.getUuid());
-            if (useExp)
-                user.addExperienceLevels((int) -entity.getHealth());
-            mob.getEntityWorld().sendEntityStatus(mob, (byte) 7);
-            return ActionResult.SUCCESS;
-        } else return super.useOnEntity(stack, user, entity, hand);
+            if (!(mob instanceof Tameable) || tameTameable) {
+                TameUtil.setOwner(mob, user.getUuid());
+                if (useExp)
+                    user.addExperienceLevels((int) -entity.getHealth());
+                mob.getEntityWorld().sendEntityStatus(mob, (byte) 7);
+                return ActionResult.SUCCESS;
+            }
+        }
+        return super.useOnEntity(stack, user, entity, hand);
     }
 
     @Override
