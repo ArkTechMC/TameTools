@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
-issueTrackerURL = "https://github.com/ArkTechMC/TameTools/issues"
+issueTrackerURL = "https://github.com/CodeOfArdonia/TameTools/issues"
 license = "All Right Reserved"
 
 [[mods]]

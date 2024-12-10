@@ -1,7 +1,7 @@
 # Tame Tools
 
 This mod is an addon for
-[Tameable](https://github.com/ArkTechMC/Tameable)([CurseForge](https://www.curseforge.com/minecraft/mc-mods/tameable)|[Modrinth](https://modrinth.com/mod/tameable)),
+[Tameable](https://github.com/CodeOfArdonia/Tameable)([CurseForge](https://www.curseforge.com/minecraft/mc-mods/tameable)|[Modrinth](https://modrinth.com/mod/tameable)),
 which add some tame tools for players to tame mobs more easily.
 
 ## Currently added
@@ -12,7 +12,7 @@ There are 4 kinds of staffs. Each staff can tame mobs under their max tame mob h
 
 Tame will spend experience level based on the mobs' health.
 
-This staff can tame every mobs (Except `Ender Dragon`, `Wither` and `Warden`, configurable through datapacks) without
+This staff can tame every mob (Except `Ender Dragon`, `Wither` and `Warden`, configurable through datapacks) without
 any configurations.
 
 ### Transfer Stone
